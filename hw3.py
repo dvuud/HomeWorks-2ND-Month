@@ -12,7 +12,8 @@ class User:
 
 class Student(User):
     def __init__(self, name, email, password, student_id):
-        super().__init__(name, email, password, student_id)
+        super().__init__(name, email, password)
+        self.student_id = student_id
         self.courses_enrolled = []
 
     def enroll_in_course(self, course):
@@ -27,7 +28,8 @@ class Student(User):
 
 class Teacher(User):
     def __init__(self, name, email, password, teacher_id):
-        super().__init__(name, email, password, teacher_id)
+        super().__init__(name, email, password)
+        self.teacher_id = teacher_id
         self.tch_courses = []
 
     def add_course(self, course):
@@ -38,7 +40,8 @@ class Teacher(User):
 
 class Admin(User):
     def __init__(self, name, email, password, admin_id):
-        super().__init__(name, email, password, admin_id)
+        super().__init__(name, email, password)
+        self.admin_id = admin_id
         self.admin_new_course = []
 
     def create_course(self, new_course):

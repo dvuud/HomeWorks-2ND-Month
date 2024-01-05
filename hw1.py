@@ -1,32 +1,32 @@
 # Задача 1
-# class Student:
-#     def __init__(self, name, surname, student_ticket ):
-#         self.name = name
-#         self.surname = surname
-#         self.student_ticket = student_ticket
-#         self.courses = []
+class Student:
+    def __init__(self, name, surname, student_ticket ):
+        self.name = name
+        self.surname = surname
+        self.student_ticket = student_ticket
+        self.courses = []
         
-#     def add_course(self, course):
-#         if course not in self.courses:
-#             self.courses.append(course)
-#             print(f"{course} добавлен студенту {self.name} {self.surname}")
+    def add_course(self, course):
+        if course not in self.courses:
+            self.courses.append(course)
+            print(f"{course} добавлен студенту {self.name} {self.surname}")
             
-#     def delete_course(self, course):
-#         if course in self.courses:
-#             self.courses.remove(course)
-#             print(f"{course} удален из списка студента {self.name} {self.surname}") 
+    def delete_course(self, course):
+        if course in self.courses:
+            self.courses.remove(course)
+            print(f"{course} удален из списка студента {self.name} {self.surname}") 
             
-#     def info_student(self):
-#         print(f"Студент {self.name} {self.surname}")
-#         print(f"Номер студентеческого билета {self.student_ticket}")
-#         print("Посещаемые курсы")
-#         for course in self.courses:
-#             print(f"{course}")
+    def info_student(self):
+        print(f"Студент {self.name} {self.surname}")
+        print(f"Номер студентеческого билета {self.student_ticket}")
+        print("Посещаемые курсы")
+        for course in self.courses:
+            print(f"{course}")
 
-# student = Student("Давуд", "Балтабаев", "34326")
-# student.add_course("Английский")
-# student.add_course("Математика")
-# student.info_student()
+student = Student("Давуд", "Балтабаев", "34326")
+student.add_course("Английский")
+student.add_course("Математика")
+student.info_student()
 
 
 # Задача 2

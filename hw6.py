@@ -85,5 +85,6 @@ def main():
         else:
             print("Неправильно введенная команда, повторите еще раз!")
 
+book = Book("book1", "author1", 2000)
 if __name__ == "__main__":
     main()

@@ -29,10 +29,6 @@ def add_car(number, brand, model, year, description):
     
     conn.commit()
     conn.close()
-
-# def up_cars(id, number, brand, model, description, year, status_service):
-#     conn = sqlite3.connect("car_service.db")
-#     cursor = conn.cursor()
     
 def update_cars(id, number, brand, model, description, year, status_service):
     connect = sqlite3.connect('car_service.db')
@@ -98,7 +94,8 @@ def main():
             print("Список автомобилей на обслуживании:")
             for car in cars:
                 print(car)
-        elif choice == 4:
+            
+        elif choice == 5:
             view_ready_cars()
             break
         else:
